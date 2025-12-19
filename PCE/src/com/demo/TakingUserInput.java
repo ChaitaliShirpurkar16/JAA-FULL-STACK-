@@ -39,6 +39,7 @@ public class TakingUserInput {
 		System.out.println(email);
 		System.out.println(status);
 		
+		sc.close();
 
 	}
 

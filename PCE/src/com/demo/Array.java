@@ -10,7 +10,7 @@ public class Array {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number  of  Students");
 		int n = sc.nextInt();
-	int a[] = new int[n];
+	    int a[] = new int[n];
 	
 		for(int i=0;i<a.length;i++) {
 			System.out.println("Please enter the marks of student : " +i);
@@ -23,6 +23,7 @@ public class Array {
 			System.out.print(a[i] + " ");
 			
 		}
+		sc.close();
 
 	}
 
