@@ -35,7 +35,6 @@ public class Binary {
 			
 		}
 		
-		
 		if(found){
 			System.out.println("The key is present : " + idx);	
 		}
