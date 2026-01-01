@@ -3,7 +3,9 @@ package com.abstraction;
 import java.util.Scanner;
 
 abstract class Shapes1 {
+	double area;
 	abstract void disp();
+	abstract void findArea();
 }
 
 class Circle1 extends Shapes1{
@@ -13,9 +15,13 @@ class Circle1 extends Shapes1{
 		this.rad = rad;	
 	}
 	public void disp() {
-		float sum= pi*rad*rad;
-		System.out.println(sum);
+		 area= pi*rad*rad;
+		
 	}
+	void findArea() {
+	System.out.println("The area of a tringle " +area);
+	}
+	
 }
 
 class Triangle1 extends Shapes1 {
@@ -27,10 +33,12 @@ class Triangle1 extends Shapes1 {
 		this.b=b;	
 	}
 	public void disp() {
-		float area= (b*h)*0.5f;
-		System.out.println(area);
+		 area= (b*h)*0.5f;
 		
     }
+	void findArea() {
+		System.out.println("The area of a tringle " + area);
+	}
 }	
 
 public class Shapes {
@@ -53,6 +61,9 @@ public class Shapes {
 	
 	static void area(Shapes1 sp) {
 		sp.disp();
+		sp.findArea();
 	}
 
 }
+
+
